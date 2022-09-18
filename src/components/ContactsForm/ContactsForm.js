@@ -9,16 +9,13 @@ import { FormLabelText } from 'components/Components.styled';
 const CONTACTS_NAME = 'name';
 const CONTACTS_NUMBER = 'number';
 function ContactsForm({ onSubmit }) {
-  // static propTypes = {
-  //   onSubmit: PropTypes.func.isRequired,
-  // };
-  // state = { ...INITIAL_STATE };
+  
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const handleChange = evt => {
     const { name, value } = evt.target;
-    // this.setState({ [name]: value });
+    
     switch (name) {
       case CONTACTS_NAME:
         setName(value);
