@@ -16,7 +16,7 @@ export function App() {
 
 
   const changeFilter = evt => {
-    setFilter({ filter: evt.currentTarget.value });
+    setFilter( evt.currentTarget.value );
   };
 
  const  checkContact = name => {
